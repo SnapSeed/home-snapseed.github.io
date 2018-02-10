@@ -12,8 +12,9 @@
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
 
     <!-- Custom styles for this template -->
-    <link href="carousel.css" rel="stylesheet">
-    <link rel="stylesheet" type="text/css" href="styles.css">
+    <link href="css/carousel.css" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="css/styles.css">
+    <link rel="stylesheet" href="css/animate.css">
 
     <title>Сайт шейхи ИншаЛлах</title>
   </head>
@@ -21,7 +22,7 @@
     <header>
       <nav class="navbar navbar-expand-md navbar-light bg-light fixed-top">
         <a class="navbar-brand" href="#">
-          <img src="images/logo5.png" alt="логотип">
+          <img class="wow zoomIn" data-wow-delay="0.01s" data-wow-duration="5s" data-wow-iteration="150" src="images/logo5.png" alt="логотип">
         </a>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
           <span class="navbar-toggler-icon"></span>
@@ -31,30 +32,32 @@
             <li class="nav-item active">
               <a class="nav-link" href="#">Главная <span class="sr-only">(current)</span></a>
             </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#">Учебные группы</a>
+            <li class="nav-item dropdown">
+              <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown">Учебные группы<b class="caret"></b></a>
+              <ul class="dropdown-menu">
+                <li><a href="#">Для сестер</a></li>
+                <li><a href="#">Для братьев</a></li>
+                <li><a href="#">Для детей</a></li>
+              </ul>
             </li>
             <li class="dropdown">
               <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown">Таджвид <b class="caret"></b></a>
               <ul class="dropdown-menu">
-                <li><a href="#">Книжная библиотека</a></li>
-                <li><a href="#">Видеобиблиотека</a></li>
+                <li><a href="#">Библиотека</a></li>
+                <li><a href="#">Видеоуроки</a></li>
                 <li><a href="#">Картинки</a></li>
                 <li class="divider"></li>
                 <li><a href="#">Статьи</a></li>
                 <li class="divider"></li>
-                <li><a href="#">ссылка</a></li>
-                <li><a href="#">ссылка</a></li>
-                <li><a href="#">ссылка</a></li>
-                <li><a href="#">ссылка</a></li>
+                <li><a href="#">Правила таджвида</a></li>
               </ul>
             </li>
 
             <li class="nav-item">
-              <a class="nav-link disabled" href="#">Хадис</a>
+              <a class="nav-link" href="#">Хадис</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link disabled" href="#">Акыда</a>
+              <a class="nav-link" href="#">Акыда</a>
             </li>
           </ul>
           <form class="form-inline mt-2 mt-md-0">
@@ -88,8 +91,8 @@
             <img class="second-slide" src="images/slide8.jpg" alt="Second slide">
             <div class="container">
               <div class="carousel-caption">
-                <h1>Another example headline.</h1>
-                <p>Cras justo odio, dapibus ac facilisis in, egestas eget quam. Donec id elit non mi porta gravida at eget metus. Nullam id dolor id nibh ultricies vehicula ut id elit.</p>
+                <h1>رفيق الدارين</h1>
+                <p>آكاديمية رفيق الدارين للقرآن والعلوم الشرعية على منهج أهل السنة والجماعة</p>
                 <p><a class="btn btn-lg btn-primary" href="#" role="button">Learn more</a></p>
               </div>
             </div>
@@ -197,12 +200,19 @@
       </footer>
     </main>
 
+
     <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
     <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
     <!-- Just to make our placeholder images work. Don't actually copy the next line! -->
-    <script src="holder.min.js"></script>
+    <script src="js/holder.min.js"></script>
+<!--Animation-->
+    <script src="js/wow.min.js"></script>
+<script>
+    new WOW().init();
+</script>
+
   </body>
 </html>
